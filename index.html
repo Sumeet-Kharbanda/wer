@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<body style="background-color:#C0C0C0;">
+
+
+<h3>Text Comparison</h3>
+
+<form action="/calculate" method="POST">
+
+
+<p style="position : absolute; left:40px;">Gold Standard/Original</p>  <textarea rows = "15" cols = "60" id = "gold_standard" name = "gold_standard" style="position : absolute; top:100px;left:40px;">
+{{ gold_standard }}
+</textarea>
+<p style="position : absolute; left:750px;">Translated/Machine generated</p> <textarea rows = "15" cols = "60" id = "translated_machine" name = "translated_machine" style="position : absolute; top:100px; left:750px;">
+{{ translated_machine }}
+</textarea ></br>
+
+ <p style="position : absolute;top:370px; left:40px;">Case Insensitive WER: </p>   <textarea readonly rows = "1" cols = "10" id = "wer" name = "wer" style="position : absolute; top:384px; left:187px;">
+{{ wer }}
+</textarea ></br>
+ <p style="position : absolute; top:370px;left:330px;">Match Error Rate: </p>   <textarea readonly rows = "1" cols = "10" id = "mer" name = "mer" style="position : absolute; top:384px;left:450px;">
+{{ mer }}
+</textarea ></br>
+ <p style="position : absolute; top:370px;left:620px;">Word Information Lost: </p>   <textarea readonly rows = "1" cols = "10" id = "wil" name = "wil" style="position : absolute;top:384px; left:773px;">
+{{ wil }}
+</textarea ></br>
+ <p style="position : absolute;top:370px; left:910px;">Word Information Preserved: </p>   <textarea readonly  rows = "1" cols = "10" id = "wip" name = "wip" style="position : absolute;top:384px; left:1097px;">
+{{ wip }}
+</textarea ></br>
+
+
+ <p style="position : absolute;top:410px; left:40px;">Case Sensitive WER: </p>   <textarea readonly rows = "1" cols = "10" id = "cs_wer" name = "cs_wer" style="position : absolute; top:424px; left:187px;">
+{{ cs_wer }}
+</textarea ></br>
+ <p style="position : absolute; top:410px;left:330px;">Words Substituted: </p>   <textarea readonly rows = "1" cols = "10" id = "sub" name = "sub" style="position : absolute; top:424px;left:450px;">
+{{ sub }}
+</textarea ></br>
+ <p style="position : absolute; top:410px;left:620px;">Words Inserted: </p>   <textarea readonly rows = "1" cols = "10" id = "ins" name = "ins" style="position : absolute;top:424px; left:773px;">
+{{ ins }}
+</textarea ></br>
+ <p style="position : absolute;top:410px; left:910px;">Words Deleted: </p>   <textarea readonly  rows = "1" cols = "10" id = "dele" name = "dele" style="position : absolute;top:424px; left:1097px;">
+{{ dele }}
+</textarea ></br>
+ 
+<input type="submit" value="Submit" style="position : absolute; top:200px; left:600px;">
+</form>
+
+</body>
+</html>
